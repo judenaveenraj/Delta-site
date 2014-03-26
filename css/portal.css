@@ -1,11 +1,12 @@
 #lab {
-	width: 1000px;
+	width: 80%;
+	height:70%;
 	overflow-y: auto;
 	padding-bottom: 70px;
 	position: relative;
-	margin: 0 auto;
-	margin-bottom: 2.5em;
-	background: rgb(236, 236, 236);
+	margin: 10% auto 0;
+	background-color:#080808;
+	color:#fff;
 
 	-webkit-transition: all ease 500ms;
 	-moz-transition: all ease 500ms;
@@ -14,19 +15,17 @@
 	transition: all ease 500ms;
 }
 
-
 .hex {
-	width: 200px;
+	width: 120px;
 	height: 230px;
 	position: relative;
 	display: inline-block;
 }
-
+               
 .hexagon2 {
 	position: absolute;
-	width: 200px;
-	height: 400px;
-	top: -85px;
+	width: 120px;
+	height: 140px;
 }
 
 .hexagon {
@@ -55,7 +54,7 @@
 
 .hexagon-in2 {
 	-webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
-	box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
+	box-shadow: inset 0 0 0 200px rgba(16,16,16,0.9);
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
@@ -82,19 +81,33 @@
 
 .hexagon-in2:hover {
 	-webkit-box-shadow: inset 0 0 0 0px #B0DAD4;
-	box-shadow: inset 0 0 0 0px #B0DAD4;
+	box-shadow: inset 0 0 0 0px rgba(16,16,16,1);
 }
 
 #lab article {
 	padding-top: 1em;
-	width: 820px;
+	width: 620px;
 	margin: 0 auto;
 }
 
-.hex:nth-child(7n-2) {
-	margin-left: 101px;
+.hex:nth-child(9n-3){
+	margin-left: 65px;
 }
 
 .hex:nth-child(n+5) {
-	margin-top: -55px;
+	margin-top: -100px;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: #aaa;
+}
+::-webkit-scrollbar
+{
+	width:10px;
+	background-color: #080808;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: #101010;	
 }
