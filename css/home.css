@@ -1,0 +1,235 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body,html{
+	width: 100%;
+	background-color: #000;
+	-webkit-font-smoothing: antialiased;
+}
+
+#header
+{
+	left:0px;
+	position:fixed;
+	top:0px;
+	width:100%;
+	height:17%;
+	background-color:#080808;
+	z-index:5;
+}
+.title-big{
+	height:20%;
+	float:left;
+	padding-left:50px;
+	color:#fff;
+	font-size:60px;
+	font-weight:900;
+	font-family:"Roboto Condensed";
+}
+.title-small{
+	width:10%;
+	padding:5px 0px 20px 50px;
+	color:#339999;
+	font-size:12px;
+	font-family:"Source Sans Pro";
+}
+
+.style-title{
+	font-family:"Alegreya Sans SC";
+	width:10%;
+	height:30%;
+	background-color:#0b0b0b;
+	text-align:center;
+	color:#339999;
+	font-size:30px;
+	margin:1% 0% 0% 1%;
+	padding:1% 1% 1% 1%;
+}
+
+#signin{
+	width:500px;
+	float:right;
+	margin-top:10px;
+	color:#fff;
+	font-size:12px;
+	font-family:"Source Sans Pro";
+}
+#signin p{
+	font-size:12px;
+	color:#339999;
+	padding:10px 0px 5px 0px;
+	font-family:"Roboto Condensed";
+	font-size:20px;
+}
+
+.textinput{
+	width:100px;
+	height:20px;
+	font-family:"Source Sans Pro";
+	font-size:11px;
+	color:#ccc;
+	background-color:#202020;
+	border:1px solid #202020;
+	padding-left:5px;
+	margin:0px 5px 0px 5px;
+}
+.textinput:hover{
+	transition:background 1s;
+	background-color:#303030;
+}
+.submitinput{
+	width:50px;	
+	height:20px;
+	margin:0px 5px 0px 5px;
+	font-family:"Source Sans Pro";
+	font-weight:900;
+	font-size:11px;
+	color:#a0a0a0;
+	background-color:#202020;
+	border:0px;
+}
+.submitinput:hover{
+	color:#000000;
+	transition:background 1s;
+	background-color:#909090;
+}
+
+.page1{
+	background: grey;
+}
+
+.mainlist {
+	position: absolute;
+	text-align: center;
+}
+
+.mainlist img{
+	width: 100%;
+	height:100%;
+}
+
+.mainlist img:hover{
+	cursor: pointer;
+}
+
+#canvas{
+	left:40%;
+	top:50%;
+}
+.background{
+	position: absolute;
+}
+
+.name{
+	position: absolute;
+}
+.name p{
+	color:white;
+}
+.list{
+	position: fixed;
+	text-align: center;
+}
+
+.item {
+	font-size:10px;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 16px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+		
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.info {
+	position: absolute;
+	background: #000000;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	opacity: 0;
+	
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	
+	-webkit-backface-visibility: hidden;
+}
+
+.otherlist h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 22px;
+	padding: 15px 0 0 0;
+	height: 43px;
+	font-family: 'Source Sans Pro';
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.info p {
+	color: #fff;
+	margin: 0 20px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	opacity: 0;
+	-webkit-transition: all .1s ease-in-out 0.4s;
+	-moz-transition: all .1s ease-in-out 0.4s;
+	-o-transition: all .1s ease-in-out 0.4s;
+	-ms-transition: all .1s ease-in-out 0.4s;
+	transition: all .1s ease-in-out 0.4s;
+}
+
+.info a {
+	display: block;
+	color: #bbb;
+	text-decoration:none;
+	font-size: 10px;
+	text-align: center;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Source Sans Pro';
+}
+
+.info a:hover {
+	cursor: pointer;
+	color: #339999;
+}
+
+.item:hover {
+	box-shadow: 
+		inset 0 0 0 1px rgba(255,255,255,0),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+.item:hover .info {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.item:hover .info p {
+	opacity: 1;
+}
