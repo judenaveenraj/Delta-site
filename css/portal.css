@@ -5,7 +5,7 @@
 	padding-bottom: 70px;
 	position: relative;
 	margin: 10% auto 0;
-	background-color:#080808;
+	background-color: rgb(2,2,2);
 	color:#fff;
 
 	-webkit-transition: all ease 500ms;
@@ -104,7 +104,7 @@
 }
 ::-webkit-scrollbar
 {
-	width:10px;
+	width:5px;
 	background-color: #080808;
 }
 ::-webkit-scrollbar-thumb
