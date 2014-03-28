@@ -33,13 +33,13 @@
                 width: 12px;
                 height: 12px;
                 border-radius: 6px;
-                background-color: #399;
+                background-color: #202020;
                 position: relative;
                 top: 33px;
             }
 
             div.activity.active {
-                background-color: #0b0;
+                background-color: #339999;
             }
 
 

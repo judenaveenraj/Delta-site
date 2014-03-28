@@ -53,9 +53,17 @@
 
 .next{
 	margin-right:10%;
+  -webkit-user-select: none;        
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
 }
 .prev{
 	margin-left:10%;
+  -webkit-user-select: none;        
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
 }
 
 .slide .blog .blog1auth1{

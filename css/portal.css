@@ -91,11 +91,11 @@
 }
 
 .hex:nth-child(9n-3){
-	margin-left: 65px;
+	margin-left: 60px;
 }
 
 .hex:nth-child(n+5) {
-	margin-top: -100px;
+	margin-top: -125px;
 }
 
 ::-webkit-scrollbar-track

@@ -22,6 +22,12 @@
 		<script src="js/jquery.flapper.js"></script>
         <script src="js/flap.js"></script>
 		
+	<script type="text/javascript">
+	function hello(){
+alert();
+
+	}
+	</script>
 	<style>
 	@font-face{
 		font-family: "Roboto Condensed";
@@ -59,13 +65,7 @@
 				<div class="mainlist">
 					<img id="delta-logo" src="delta.png" />
 				</div>
-				<div class="list otherlist">
-					<div class="item">
-						<div class="info">
-							<p><span><a id="enter-animation">Enter<a></span></p>
-						</div>	
-					</div>
-				</div>
+				
 				<div id="list1" class="list otherlist">
 					<div class="item">
 						<div class="info">
@@ -285,7 +285,7 @@
 </div>
 </div>
 
-	<div class=" section" id="section3">
+	<div class=" section" id="section3" onkeypress="hello();">
 		<div id="pro" class="panel1">
 			<nav>
 				<a class="link"	 href="#projects">
@@ -448,6 +448,7 @@
 		document.getElementById("current").innerHTML=str.substr(str.indexOf("#") + 1);
 		$( "#current" ).fadeTo( "slow" , 0.7, "swing", function() { });
 		});
-	</script>	
+	</script>
+
     </body>
 </html>
