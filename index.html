@@ -45,7 +45,6 @@ alert();
 		
     </head>
 <body>	
-<div id="typesomething">hello</div>
 <div id="header" style="display:none;">
 		<form id="signin">
 		<p>Login</p>
@@ -437,15 +436,12 @@ alert();
 	
 	<script type="text/javascript" src="js/main.js"></script>
 	<script>
-	var str=document.URL.toUpperCase();
-	if(str.indexOf("#")!=-1)
-		document.getElementById("current").innerHTML=str.substr(str.indexOf("#") + 1);
-	else
-		document.getElementById("current").innerHTML="HOME";
-	$(window).bind('hashchange', function(){
+	var str=anchorLink.toUpperCase();
+	document.getElementById("current").innerHTML=page[sectionIndex];
+		$(window).bind('hashchange', function(){
 		document.getElementById("current").style.opacity=0;
 		var str=document.URL.toUpperCase();
-		document.getElementById("current").innerHTML=str.substr(str.indexOf("#") + 1);
+		document.getElementById("current").innerHTML=page[sectionIndex];
 		$( "#current" ).fadeTo( "slow" , 0.7, "swing", function() { });
 		});
 	</script>

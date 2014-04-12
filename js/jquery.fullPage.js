@@ -5,7 +5,8 @@
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
-
+var anchorLink="home",sectionIndex=0;
+var page=["home","portal","projects","blog","connect"];
 (function($) {
 	$.fn.fullpage = function(options) {
 		// Create some defaults, extending them with any options that were provided
@@ -298,7 +299,7 @@
 					if(options.anchors.length && !isMoving){
 						//needed to enter in hashChange event when using the menu with anchor links
 						lastScrolledDestiny = anchorLink;
-			
+
 						location.hash = anchorLink;
 					}
 					
@@ -416,7 +417,7 @@
 						(e.wheelDelta || -e.detail)));
 				var scrollable;
 				var activeSection = $('.section.active');
-				
+
 				if (!isMoving) { //if theres any #
 				
 					//if there are landscape slides, we check if the scrolling bar is in the current one or not
@@ -507,8 +508,8 @@
 			var dest = element.position();
 			var dtop = dest !== null ? dest.top : null;
 			var yMovement = getYmovement(element);
-			var anchorLink  = element.data('anchor');
-			var sectionIndex = element.index('.section');
+			anchorLink  = element.data('anchor');
+			sectionIndex = element.index('.section');
 			var activeSlide = element.find('.slide.active');
 
 			if(activeSlide.length){

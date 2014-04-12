@@ -138,9 +138,10 @@ FlapDemo.prototype = {
     }
 
 };
-
+document.writeln("<script type='text/javascript' src='jquery.fullpage.js'></script>");
 $(document).ready(function(){
     var flap = new FlapDemo('input.display');
 	setInterval(function(){
+	if(anchorLink=='home')
 	flap.update();},3000);
 });
