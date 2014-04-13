@@ -97,17 +97,3 @@
 .hex:nth-child(n+5) {
 	margin-top: -125px;
 }
-
-::-webkit-scrollbar-track
-{
-	background-color: #aaa;
-}
-::-webkit-scrollbar
-{
-	width:5px;
-	background-color: #080808;
-}
-::-webkit-scrollbar-thumb
-{
-	background-color: #101010;	
-}

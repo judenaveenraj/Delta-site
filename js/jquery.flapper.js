@@ -28,7 +28,7 @@
             padding: ' ',
             chars: null,
             chars_preset: 'num',
-            timing: 250,
+            timing: 300,
             min_timing: 10,
             threshhold: 100,
             transform: true,
