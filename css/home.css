@@ -117,6 +117,10 @@ body,html{
 	z-index:1;
 }
 
+#list1,#list3,#list4,#list5,#list6,#list7{
+	opacity:0;
+}
+
 .item {
 	font-size:10px;
 	width: 100%;

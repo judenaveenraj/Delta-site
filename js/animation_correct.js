@@ -79,8 +79,9 @@ function animation_four(){
 }
 
 function execute(){
+
 	setTimeout(function(){
-		animation_one();
+	animation_one();
 	},4);
 	setTimeout(function(){
 		$('#mainlist').bind('click',function(){
