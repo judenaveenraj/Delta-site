@@ -66,7 +66,7 @@ window.requestAnimFrame= (function(callback){
     				normalScrollElements: '#lab,.flex-container,#page-wrap',
     				keyboardScrolling: true,
     				fixedElements: '#go,.item,.info,.list,#portal',
-    				anchors:['home', 'portal','projects','blog','connect']
+    				anchors:['home', 'portal','projects','blog','contact','connect']
     				/*menu: 'landingpg'*/
 				});
 			});	

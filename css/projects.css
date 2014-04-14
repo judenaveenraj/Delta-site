@@ -81,17 +81,18 @@ tr {
 	cursor: pointer;
 	width: 300px;
 	overflow: hidden;
+	margin-right:50px;
 }
 
 .up{
-	position:absolute;
+	position:relative;
 	left:0%;
-	top:-15%;
+	margin:4% 0% 4% 5%;
 }
 .down{
-	position:absolute;
-	left:0%;
+	position:relative;
 	top:40%;
+	margin:4% 0% 4% 5%;
 }
 
 .post-container{
@@ -279,4 +280,14 @@ nav  a:last-child { border-bottom: 0px; }
 	opacity: 1;
 	left: 80px;
 	top:300px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #101010;	
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: #aaa;
 }

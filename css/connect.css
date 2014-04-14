@@ -1,6 +1,6 @@
 .connect{
 	width:400px;
-	margin:0 auto;
+	margin:5% auto 0;
 	color:#fff;
 	font-size:60px;
 	font-family:"Roboto Condensed";
@@ -8,7 +8,7 @@
 
 .links{
 	width:200px;
-	margin:0 auto;
+	margin:-15% auto 0;
 }
 .links a{
 	opacity:0.5;

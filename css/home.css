@@ -6,13 +6,12 @@
 body,html{
 	width: 100%;
 	background-color: #000;
-	-webkit-font-smoothing: antialiased;
 }
 
 #header
 {
 	left:0px;
-	position:fixed;
+	position:fixed;	
 	top:0px;
 	width:100%;
 	height:17%;
@@ -29,8 +28,8 @@ body,html{
 	font-family:"Roboto Condensed";
 }
 .title-small{
-	width:10%;
-	padding:5px 0px 20px 50px;
+	width:25%;
+	padding:5px 0px 20px 53px;
 	color:#339999;
 	font-size:12px;
 	font-family:"Source Sans Pro";
@@ -39,7 +38,7 @@ body,html{
 .style-title{
 	font-family:"Alegreya Sans SC";
 	width:10%;
-	height:30%;
+	height:55%;
 	background-color:#0b0b0b;
 	text-align:center;
 	color:#339999;
@@ -47,11 +46,11 @@ body,html{
 	margin:1% 0% 0% 1%;
 	padding:1% 1% 1% 1%;
 }
-
+	
 #signin{
+	position:relative;
 	width:500px;
 	float:right;
-	margin-top:10px;
 	color:#fff;
 	font-size:12px;
 	font-family:"Source Sans Pro";
@@ -59,7 +58,8 @@ body,html{
 #signin p{
 	font-size:12px;
 	color:#339999;
-	padding:10px 0px 5px 0px;
+	margin:20px 0px 10px 0px;
+	padding:0px;
 	font-family:"Roboto Condensed";
 	font-size:20px;
 }
@@ -68,7 +68,7 @@ body,html{
 	width:100px;
 	height:20px;
 	font-family:"Source Sans Pro";
-	font-size:11px;
+	font-size:12px;
 	color:#ccc;
 	background-color:#202020;
 	border:1px solid #202020;
@@ -95,33 +95,16 @@ body,html{
 	transition:background 1s;
 	background-color:#909090;
 }
-
-.page1{
-	background: grey;
+	
+#mainlist{
+	width:100px;
+	margin:0 auto;
+	cursor:pointer;
+	font-family:"Source Sans Pro";
+	font-size:20px;
+	color:#777;
 }
-
-.mainlist {
-	position: absolute;
-	text-align: center;
-}
-
-.mainlist img{
-	width: 100%;
-	height:100%;
-}
-
-.mainlist img:hover{
-	cursor: pointer;
-}
-
-#canvas{
-	left:40%;
-	top:50%;
-}
-.background{
-	position: absolute;
-}
-
+		
 .name{
 	position: absolute;
 }
@@ -153,7 +136,6 @@ body,html{
 }
 
 .info {
-	position: absolute;
 	background: #000000;
 	width: inherit;
 	height: inherit;
@@ -187,13 +169,11 @@ body,html{
 }
 
 .info a {
-	display: block;
 	color: #bbb;
 	text-decoration:none;
 	font-size: 10px;
 	text-align: center;
 	letter-spacing: 1px;
-	padding-top: 4px;
 	font-family: 'Source Sans Pro';
 }
 

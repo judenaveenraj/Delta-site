@@ -1,8 +1,7 @@
 #lab {
 	width: 80%;
-	height:70%;
+	height:75%;
 	overflow-y: auto;
-	padding-bottom: 70px;
 	position: relative;
 	margin: 10% auto 0;
 	background-color: rgb(2,2,2);

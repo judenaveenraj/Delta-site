@@ -6,7 +6,7 @@
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
 var anchorLink="home",sectionIndex=0;
-var page=["home","portal","projects","blog","connect"];
+var page=["home","portal","projects","blog","contact","connect"];
 (function($) {
 	$.fn.fullpage = function(options) {
 		// Create some defaults, extending them with any options that were provided

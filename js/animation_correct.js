@@ -1,6 +1,6 @@
 var w=$(window).width(),
-	h=$(window).height(), 
-	sc_r=w/30, 
+	h=$(window).height()+50, 
+	sc_r=w/22.5, 
 	posX,
 	posY,
 	itr=0;
@@ -27,7 +27,7 @@ function move(elem,x,y,itr){
 }
 
 function start(){
-	defsty('.mainlist',h/2-w/16,w/2-w/16,w/8,w/8,1);
+	defsty('#mainlist',h/2-w/16,w/2-w/16,w/8,w/8,1);
 }
 
 function animation_one(){
@@ -53,16 +53,16 @@ function animation_two(){
 
 function animation_three(){
 	setTimeout(function(){
-		defsty('#list4',5*h/8-sc_r/2,5*w/8-sc_r/2,w/15,w/15,1);
-		defsty('#list7',5*h/8-sc_r/2,5*w/8-sc_r/2,w/15,w/15,1);
-		move('#list4',3*w/8-sc_r,5*h/8-sc_r,1);
-		move('#list7',3*w/8-sc_r,5*h/8-sc_r,1);
+		defsty('#list4',4.9*h/8-sc_r/2,5*w/8-sc_r/2,w/15,w/15,1);
+		defsty('#list7',4.9*h/8-sc_r/2,5*w/8-sc_r/2,w/15,w/15,1);
+		move('#list4',3.1*w/8-sc_r,5*h/8-sc_r,1);
+		move('#list7',3.1*w/8-sc_r,5*h/8-sc_r,1);
 	},1000);
 }
 
 function animation_four(){
 	setTimeout(function(){
-		defsty('.mainlist',h/2,1.5*w/15,w/15,w/15,0);
+		defsty('#mainlist',h/2,1.5*w/15,w/15,w/15,0);
 		move('#list3',w-1.2*w/15,h/2-w/30,2);
 		move('#list4',w-1.2*w/15,h/2-w/12-w/30,3);
 		move('#list1',w-1.2*w/15,h/2+w/12-w/30,4);
@@ -81,15 +81,14 @@ function animation_four(){
 
 function execute(){
 	setTimeout(function(){
-		start();
 		animation_one();
 	},4);
 	setTimeout(function(){
-		$('.mainlist').bind('click',function(){
+		$('#mainlist').bind('click',function(){
 			animation_four();
 			document.getElementById("flappy").style.display="";
 			document.getElementById("header").style.display="";
-		});
+			});
 	},1000);
 	
 }
@@ -97,7 +96,7 @@ execute();
 
 function revert(){
 	setTimeout(function(){
-		defsty('.mainlist',h/2-w/16,w/2-w/16,w/8,w/8,1);
+		defsty('#mainlist',h/2-w/16,w/2-w/16,w/8,w/8,1);
 		defsty('#list1',h/2,w/2,w/15,w/15,1);
 		move('#list1',w/2-sc_r,h/4-sc_r,1);
 		defsty('#list3',h/4-sc_r,w/2-sc_r,w/15,w/15,1);

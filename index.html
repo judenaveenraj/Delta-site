@@ -11,16 +11,21 @@
 		<link rel="stylesheet" type="text/css" href="css/connect.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 		<link rel="stylesheet" type="text/css" href="font/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />	
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />	
+        <link rel="stylesheet" type="text/css" href="css/contact.css" />
 		
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery_ui.min.js"></script>
 		<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="js/animation_correct.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
 		
 		<script src="js/jquery.flapper.js"></script>
         <script src="js/flap.js"></script>
+		
 	<style>
 	@font-face{
 		font-family: "Roboto Condensed";
@@ -35,8 +40,8 @@
 		src: url("./font/AlegreyaSansSC-Thin.ttf");
 	}
 	</style>
-		
-    </head>
+	
+</head>
 <body>	
 <div id="header" style="display:none;">
 		<form id="signin">
@@ -54,14 +59,14 @@
 	<div id="section1" class="section">
 		<div class="page_container">
 			 <div id="navigation">
-				<div class="mainlist">
-					<img id="delta-logo" src="delta.png" />
-				</div>
+			 
+			
+				<div id="mainlist">E N T E R</div>
 				
 				<div id="list1" class="list otherlist">
 					<div class="item">
 						<div class="info">
-							<a href="#contactus">
+							<a href="#contact">
 							<h3><span class="fa fa-phone"></span></h3>
 							CONTACT US
 							</a>
@@ -417,6 +422,95 @@
 	</div>
 	
 	<div class="section" id="section5">
+			<section class="main">
+				<ul class="ch-grid">
+					
+				<div class="ch-item">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img" style="overflow:hidden">
+								<div class="forward">
+								<div class="intro">DELTA</div>
+								<div class="role">WEB DEV</div>								
+								</div>
+								</div>
+								<div class="ch-info-back">
+									<h3>psychotherapist</h3>
+									<p> admin@localhost.com <a href="http://github.com/">View on Github</a></p>
+								</div>	
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img" style="overflow:hidden">
+								<div class="forward">
+								<div class="intro">DELTA</div>
+								<div class="role">WEB DEV</div>								
+								</div>
+								</div>
+								<div class="ch-info-back">
+									<h3>big mouth</h3>
+									<p> admin@localhost.com <a href="http://github.com/">View on Github</a></p>
+								</div>	
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img" style="overflow:hidden">
+								<div class="forward">
+								<div class="intro">DELTA</div>
+								<div class="role">WEB DEV</div>								
+								</div>
+								</div>
+								<div class="ch-info-back">
+									<h3>bingo machine</h3>
+									<p> admin@localhost.com <a href="http://github.com/">View on Github</a></p>
+								</div>	
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="ch-item">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img" style="overflow:hidden">
+								<div class="forward">
+								<div class="intro">DELTA</div>
+								<div class="role">WEB DEV</div>								
+								</div>
+								</div>
+								<div class="ch-info-back">
+									<h3>psychotherapist</h3>
+									<p> admin@localhost.com <a href="http://github.com/">View on Github</a></p>
+								</div>	
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img" style="overflow:hidden">
+								<div class="forward">
+								<div class="intro">DELTA</div>
+								<div class="role">WEB DEV</div>								
+								</div>
+								</div>
+								<div class="ch-info-back">
+									<h3>Mouse</h3>
+									<p> admin@localhost.com <a href="http://github.com/">View on Github</a></p>
+								</div>	
+							</div>
+						</div>
+					</li>
+				</ul>
+				
+			</section>
+	</div>
+	
+	<div class="section" id="section6">
 	<div class="connect">
 		<p>Connect with us</p>
 		<div class="links">
@@ -437,6 +531,15 @@
 		document.getElementById("current").innerHTML=page[sectionIndex];
 		$( "#current" ).fadeTo( "slow" , 0.7, "swing", function() { });
 		});
+	var k=0;
+	document.getElementById('mainlist').onmouseover=function(){k=1;document.getElementById('mainlist').style.opacity=1;}
+	document.getElementById('mainlist').onmouseout=function(){k=0;}
+	setInterval(function(){
+	if(document.getElementById("mainlist").style.opacity==1 && k!=1)
+	$( "#mainlist" ).fadeTo( "slow" , 0, "swing", function() { });
+	else if(document.getElementById("mainlist").style.opacity==0)
+	$( "#mainlist" ).fadeTo( "slow" , 1, "swing", function() { });
+	},1000);
 	</script>
 	
    </body>
