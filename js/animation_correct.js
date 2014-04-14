@@ -79,7 +79,15 @@ function animation_four(){
 }
 
 function execute(){
-
+	setInterval(function(){
+			if(page[sectionIndex]!="home")
+			{
+			animation_four();
+			document.getElementById("flappy").style.display="";
+			document.getElementById("header").style.display="";
+			}
+	},100);
+	
 	setTimeout(function(){
 	animation_one();
 	},4);
