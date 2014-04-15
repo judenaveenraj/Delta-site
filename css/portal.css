@@ -4,7 +4,7 @@
 	overflow-y: auto;
 	position: relative;
 	margin: 10% auto 0;
-	background-color: rgb(2,2,2);
+	background-color: #eee;
 	color:#fff;
 
 	-webkit-transition: all ease 500ms;
