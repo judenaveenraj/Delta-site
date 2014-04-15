@@ -5,7 +5,7 @@
 
 body,html{
 	width: 100%;
-	background-color: #000;
+	background-color: #eee;
 }
 
 #header
@@ -15,14 +15,14 @@ body,html{
 	top:0px;
 	width:100%;
 	height:17%;
-	background-color:#080808;
+	background-color:#ddd;
 	z-index:5;
 }
 .title-big{
 	height:20%;
 	float:left;
 	padding-left:50px;
-	color:#fff;
+	color:#111;
 	font-size:60px;
 	font-weight:900;
 	font-family:"Roboto Condensed";
@@ -30,7 +30,7 @@ body,html{
 .title-small{
 	width:25%;
 	padding:5px 0px 20px 53px;
-	color:#339999;
+	color:#111;
 	font-size:12px;
 	font-family:"Source Sans Pro";
 }
@@ -39,7 +39,7 @@ body,html{
 	font-family:"Alegreya Sans SC";
 	width:10%;
 	height:55%;
-	background-color:#0b0b0b;
+	background-color:#ddd;
 	text-align:center;
 	color:#339999;
 	font-size:30px;
@@ -51,7 +51,7 @@ body,html{
 	position:relative;
 	width:500px;
 	float:right;
-	color:#fff;
+	color:#222;
 	font-size:12px;
 	font-family:"Source Sans Pro";
 }
@@ -66,18 +66,17 @@ body,html{
 
 .textinput{
 	width:100px;
-	height:20px;
 	font-family:"Source Sans Pro";
 	font-size:12px;
-	color:#ccc;
-	background-color:#202020;
-	border:1px solid #202020;
-	padding-left:5px;
+	color:#222;
+	background-color:#ddd;
+	border:1px solid #ededed;
+	padding: 4px;
 	margin:0px 5px 0px 5px;
 }
 .textinput:hover{
 	transition:background 1s;
-	background-color:#303030;
+	background-color:#ccc;
 }
 .submitinput{
 	width:50px;	
@@ -87,13 +86,13 @@ body,html{
 	font-weight:900;
 	font-size:11px;
 	color:#a0a0a0;
-	background-color:#202020;
+	background-color:#cdcdcd;
 	border:0px;
 }
 .submitinput:hover{
 	color:#000000;
 	transition:background 1s;
-	background-color:#909090;
+	background-color:#bbb;
 }
 	
 #mainlist{
@@ -102,14 +101,14 @@ body,html{
 	cursor:pointer;
 	font-family:"Source Sans Pro";
 	font-size:20px;
-	color:#777;
+	color:#111;
 }
 		
 .name{
 	position: absolute;
 }
 .name p{
-	color:white;
+	color:#111;
 }
 .list{
 	position: fixed;
@@ -129,8 +128,8 @@ body,html{
 	position: relative;
 	cursor: default;
 	box-shadow: 
-		inset 0 0 0 16px #080808,
-		0 1px 2px rgba(0,0,0,0.1);
+		inset 0 0 0 16px #ddd,
+		0 1px 2px rgba(50,50,50,0.1);
 		
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -140,7 +139,7 @@ body,html{
 }
 
 .info {
-	background: #000000;
+	background: #ccc;
 	width: inherit;
 	height: inherit;
 	border-radius: 50%;
@@ -161,7 +160,7 @@ body,html{
 }
 
 .otherlist h3 {
-	color: #fff;
+	color: #111;
 	letter-spacing: 2px;
 	font-size: 22px;
 	padding: 15px 0 0 0;
@@ -173,7 +172,7 @@ body,html{
 }
 
 .info a {
-	color: #bbb;
+	color: #111;
 	text-decoration:none;
 	font-size: 10px;
 	text-align: center;
